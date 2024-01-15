@@ -72,3 +72,9 @@
     fill: var(--main-color);
   }
 }
+
+@media (min-width: 768px) {
+  :root {
+    --slant-gradient-deg: 160deg;
+  }
+}
