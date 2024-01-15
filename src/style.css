@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --slant-gradient-deg: 155deg;
+  --main-color: #4f46e5;
+}
+
+@layer components {
+  .section-heading {
+    @apply mb-3 text-center text-3xl font-medium tracking-wide;
+  }
+
+  .svg {
+    @apply h-10 w-10;
+  }
+
+  .svg-sm {
+    @apply h-6 w-6;
+  }
+
+  .work-list {
+    @apply grid justify-center gap-6;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
+  }
+
+  .work-item {
+    @apply main-shadow grid h-96;
+    grid-template-rows: 6fr 4fr;
+  }
+}
+
+@layer utilities {
+  .playfair-display-font {
+    font-family: "Playfair Display", serif;
+  }
+
+  .roboto-font {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .slant-gradient {
+    background: linear-gradient(
+      var(--slant-gradient-deg),
+      var(--main-color) 0%,
+      var(--main-color) 49.9%,
+      rgb(0, 0, 0, 0.1),
+      transparent 50%,
+      transparent 100%
+    );
+  }
+
+  .text-shadow {
+    text-shadow: 0px 1px 0px #000;
+  }
+
+  .main-shadow {
+    box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .bg-main {
+    background-color: var(--main-color);
+  }
+
+  .hover-fill-main {
+  }
+
+  .hover-fill-main:hover {
+    fill: var(--main-color);
+  }
+}
