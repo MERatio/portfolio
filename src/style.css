@@ -11,7 +11,7 @@
 
 @layer components {
   .section-heading {
-    @apply mb-3 text-center text-3xl font-medium tracking-wide;
+    @apply mb-3 text-center text-3xl font-medium tracking-wide lg:text-left;
   }
 
   .svg {
@@ -46,7 +46,7 @@
     background: linear-gradient(
       var(--slant-gradient-deg),
       var(--main-color) 0%,
-      var(--main-color) 49.9%,
+      var(--main-color) 49.8%,
       rgb(0, 0, 0, 0.1),
       transparent 50%,
       transparent 100%
@@ -76,5 +76,11 @@
 @media (min-width: 768px) {
   :root {
     --slant-gradient-deg: 160deg;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --slant-gradient-deg: 170deg;
   }
 }
