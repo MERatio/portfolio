@@ -9,7 +9,8 @@
     "prettier:fix:all": "npx prettier . --write",
     "watch": "webpack --watch --config webpack.dev.js",
     "start": "webpack serve --no-open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "gh-pages:push": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
